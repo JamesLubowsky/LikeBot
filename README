@@ -1,0 +1,24 @@
+We all love attention.  Hell, I only post messages in GroupMe with the hopes of
+getting likes.  That is why I created the LikeBot.
+
+LikeBot is very simple to run and works for all GroupMe groups.
+
+First, you need to get a token to access the groupme api.
+
+Next, create a bot at https://dev.groupme.com/bots
+
+After creating your bot, specify which group you want it to be a part of
+
+Using your token, group_id and bot_id, fill in the respective paramaters in
+the actual Python script
+
+This is a very primitive implementation.  Code is commented out which saves 
+the state of the user_dictionary so that the bot does not need to read all the
+messages in the chat, it will start at the last time it was called.  It will
+be saved in a text file, because it is easy to work with
+
+FUTURE PLANS:
+Deploy code on web-service
+Allow members of group to @ the bot and get the amount of likes they
+have in the chat
+
